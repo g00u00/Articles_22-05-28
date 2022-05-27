@@ -1,0 +1,23 @@
+{% extends 'articl/base.html' %}
+
+{% block content %}
+    <h1>New post</h1>
+    <form method="POST" class="post-form" enctype="multipart/form-data">{% csrf_token %}
+        {{ form.as_p }}
+
+        <button type="submit" class="save btn btn-default">Save</button>
+    <p>Ссылка: <a href="{{ file_url }}">{{ file_url }}</a></p>
+    </form>
+
+
+<!-- Выводим уже созданные записи -->
+{% for b in books %}
+<p>{{ b.title }}</p>
+<img src="{{ b.cover.url }}" width="100px">
+<!-- Выводим размер картинки -->
+<p>Оригинальный размер картинки  {{ b.cover.width }}x{{ b.cover.height }}</p>
+<br/>
+<a href="{{ b.book }}">Книга</a>
+{% endfor %}
+
+{% endblock %}
