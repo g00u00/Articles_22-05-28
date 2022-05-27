@@ -15,5 +15,6 @@
         <h1>{{ post.title }}</h1>
         <p>{{ post.text|linebreaksbr }}</p>
         <img src="../../media/{{ post.cover }}">
+        <p>Ссылка: <a href="../../media/{{ post.book }}">{{ post.book }}</a></p>
     </div>
 {% endblock %}
