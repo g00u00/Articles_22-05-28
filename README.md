@@ -1,12 +1,12 @@
 # Articles
 
-git clone https://github.com/g00u00/Articles.git
+git clone https://github.com/g00u00/Articles_22-05-28.git
 
 <или>
 
 git init
 
-git remote add origin git@github.com:g00u00/Articles.git
+git remote add origin git@github.com:g00u00/Articles_22-05-28.git
 
 git pull origin main
 
@@ -19,6 +19,8 @@ python3 -m venv env
 . env/bin/activate
 
 pip install -r requirements.txt
+
+python manage.py runserver
 
 python manage.py runserver 10.0.2.15:8000
 
