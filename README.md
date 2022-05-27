@@ -2,13 +2,15 @@
 
 git clone https://github.com/g00u00/Articles.git
 
-или
+<или>
 
 git init
 
 git remote add origin git@github.com:g00u00/Articles.git
 
 git pull origin main
+
+</или>
 
 cd Articles
 
