@@ -47,6 +47,8 @@ from articl.models import Post
 
 Post.objects.all()
 
+Post.objects.values()
+
 Post.objects.values_list()
 
 dir(Post.objects.filter(id__lte=20))
