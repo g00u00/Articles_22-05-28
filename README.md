@@ -12,7 +12,7 @@ git pull origin main
 
 </или>
 
-cd Articles
+cd Articles_22-05-28
 
 python3 -m venv env
 
